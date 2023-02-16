@@ -8,17 +8,13 @@
 import Foundation
 
 protocol CellActions {
-    func productClick(index:Int)
+    func chooseProduct(index: Int)
 }
 
 class Cell {
-   
-        var delegate: CellActions!
-        
-        func butten(index:Int) {
-            delegate.productClick(index: index)
-            
-        }
+    var delegate: CellActions!
+    
+    func chooseProduct(index: Int) {
+        delegate.chooseProduct(index: index)
     }
-
-
+}
