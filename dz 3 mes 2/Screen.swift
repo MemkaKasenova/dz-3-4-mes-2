@@ -30,3 +30,5 @@ class Screen: CellActions {
         print("Имя продукта: \(products[index].productname).\nЦена: \(products[index].priceAmount)")
     }
 }
+
+

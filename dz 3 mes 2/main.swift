@@ -43,9 +43,15 @@ for _ in 1...5 {
         chosenProducts.append(screen.products[5])
         print("Количество выбранных товаров: \(chosenProducts.count)")
         screen.chooseProduct(index: 5)
-    default: () //ничего не делать
+    default: ()
     }
 }
+    var total = 0
 
+    for product in chosenProducts {
+        total += product.priceAmount
+    }
+
+    print("итого: \(total)")
 
 
